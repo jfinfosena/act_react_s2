@@ -1,18 +1,18 @@
-import TarjetaGlobal from "./components/TarjetaGlobal";
+import TarjetaModulo from "./components/TarjetaModulo";
 
 export default function Home() {
   return (
     <main>
-      <TarjetaGlobal 
-        titulo="Mi primera tarjeta"
-        contenido="Este es un ejemplo de tarjeta global con estilos desde globals.css"
-        color="#4CAF50"
+      <TarjetaModulo
+        nombre="Aprendiendo CSS Modules"
+        descripcion="Este componente utiliza estilos aislados con CSS Modules para evitar conflictos globales."
+        categoria="Frontend"
       />
 
-      <TarjetaGlobal 
-        titulo="Otra tarjeta"
-        contenido="Puedes cambiar el color fácilmente pasando la prop."
-        color="#2196F3"
+      <TarjetaModulo
+        nombre="Ejercicio 2.1"
+        descripcion="Aquí probamos transiciones suaves en hover y estilos únicos por clase."
+        categoria="Práctica"
       />
     </main>
   );
