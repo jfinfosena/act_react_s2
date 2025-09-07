@@ -1,24 +1,30 @@
-import TarjetaVariantes from "./components/TarjetaVariantes";
+import TarjetaDinamica from "./components/TarjetaDinamica";
 
 export default function Home() {
   return (
     <main>
-      <TarjetaVariantes
-        titulo="Tarjeta Primaria"
-        descripcion="Soy una tarjeta con estilo azul (primaria)."
-        variante="primaria"
+      <TarjetaDinamica
+        titulo="Tarjeta Roja"
+        contenido="Este componente usa estilos en línea con props."
+        colorFondo="#e74c3c"
+        colorTexto="#fff"
+        ancho="300px"
       />
 
-      <TarjetaVariantes
-        titulo="Tarjeta Secundaria"
-        descripcion="Soy una tarjeta gris oscuro (secundaria)."
-        variante="secundaria"
+      <TarjetaDinamica
+        titulo="Tarjeta Azul"
+        contenido="Puedes cambiar el color de fondo, texto y ancho fácilmente."
+        colorFondo="#3498db"
+        colorTexto="#fff"
+        ancho="50%"
       />
 
-      <TarjetaVariantes
-        titulo="Tarjeta de Éxito"
-        descripcion="Soy una tarjeta verde (éxito)."
-        variante="exito"
+      <TarjetaDinamica
+        titulo="Tarjeta Verde"
+        contenido="Los estilos son 100% dinámicos con base en props."
+        colorFondo="#2ecc71"
+        colorTexto="#000"
+        ancho="400px"
       />
     </main>
   );
