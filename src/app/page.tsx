@@ -1,18 +1,24 @@
-import TarjetaModulo from "./components/TarjetaModulo";
+import TarjetaVariantes from "./components/TarjetaVariantes";
 
 export default function Home() {
   return (
     <main>
-      <TarjetaModulo
-        nombre="Aprendiendo CSS Modules"
-        descripcion="Este componente utiliza estilos aislados con CSS Modules para evitar conflictos globales."
-        categoria="Frontend"
+      <TarjetaVariantes
+        titulo="Tarjeta Primaria"
+        descripcion="Soy una tarjeta con estilo azul (primaria)."
+        variante="primaria"
       />
 
-      <TarjetaModulo
-        nombre="Ejercicio 2.1"
-        descripcion="Aquí probamos transiciones suaves en hover y estilos únicos por clase."
-        categoria="Práctica"
+      <TarjetaVariantes
+        titulo="Tarjeta Secundaria"
+        descripcion="Soy una tarjeta gris oscuro (secundaria)."
+        variante="secundaria"
+      />
+
+      <TarjetaVariantes
+        titulo="Tarjeta de Éxito"
+        descripcion="Soy una tarjeta verde (éxito)."
+        variante="exito"
       />
     </main>
   );
