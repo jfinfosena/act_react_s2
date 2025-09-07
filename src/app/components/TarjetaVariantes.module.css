@@ -1,0 +1,39 @@
+.base {
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: white;
+}
+
+.base:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Variantes */
+.tarjetaPrimaria {
+  background-color: #0070f3; 
+}
+
+.tarjetaSecundaria {
+  background-color: #555;
+}
+
+.tarjetaExito {
+  background-color: #28a745;
+}
+
+/* Texto interno */
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.descripcion {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
